@@ -1,0 +1,121 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Montserrat;
+    font-weight:lighter;
+    outline:none;border:none;
+    text-decoration:none;
+    transition:all 0.2s linear;
+}
+header{
+    position:fixed;
+    top:0; left:0; right:0;
+    background-color:white;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2rem 9%;
+}
+header.logo {
+       
+}
+
+nav.menu {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+    .menu > ul > li {
+        font-weight:bold;
+        list-style: none;
+        margin-left: 7px;
+        position:relative;
+    }
+
+        .menu > ul >li > a {
+            text-decoration: none;
+            color: #151f29;
+            font-size: 18px;
+            font-weight: bolder;
+            padding: 10px 20px;
+            transition: all 0.40s ease;
+        }
+.menu > ul > li > a:hover {
+           color: #ff5203;
+           
+}
+ul.sub-menu {
+    top:30px;
+    width:220px;
+    min-height:100px;
+    background: white;
+    display:none;
+    position:absolute;
+    
+}
+ul.sub-menu > li{
+    list-style:none;
+
+}
+    ul.sub-menu > li > a {
+        color: #ff5203;
+        background-color: black;
+        text-decoration: none;
+        display: block;
+        border-top: 1px solid #808080;
+        line-height: 50px;
+        text-indent: 25px;
+        transition: all 0.3s ease;
+    }
+        ul.sub-menu > li > a:hover {
+            color: white;
+        }
+.menu > ul > li:hover ul.sub-menu{
+    display:block;
+    transition: ease-out 0.35s;
+    -moz-transition: ease-out 0.35s;
+    -webkit-transition:ease-out 0.35s;
+}
+
+div.icons {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.icons > ul {
+    display: flex;
+}
+
+    .icons > ul > li {
+        list-style: none;
+        margin-left: 7px;
+    }
+
+.icons > ul > li > a {
+         text-decoration: none;
+            color: #151f29;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+}
+
+.icons > ul > li > a:hover {
+                background: #ff5203;
+                border-radius: 5px;
+                color: white;
+}
